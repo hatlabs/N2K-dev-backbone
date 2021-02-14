@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name N2K-hub)(type KiCad)(uri ${KIPRJMOD}/N2K-hub.pretty)(options "")(descr ""))
+)

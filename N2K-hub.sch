@@ -1,0 +1,842 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_01x04 J101
+U 1 1 602815B7
+P 5000 1350
+F 0 "J101" H 5080 1342 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 1251 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 1350 50  0001 C CNN
+F 3 "~" H 5000 1350 50  0001 C CNN
+	1    5000 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R101
+U 1 1 60285DBE
+P 1600 3100
+F 0 "R101" V 1393 3100 50  0000 C CNN
+F 1 "120R" V 1484 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1530 3100 50  0001 C CNN
+F 3 "~" H 1600 3100 50  0001 C CNN
+	1    1600 3100
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R102
+U 1 1 60286CCD
+P 1600 3400
+F 0 "R102" V 1393 3400 50  0000 C CNN
+F 1 "120R" V 1484 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 1530 3400 50  0001 C CNN
+F 3 "~" H 1600 3400 50  0001 C CNN
+	1    1600 3400
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C102
+U 1 1 602875A6
+P 1750 1850
+F 0 "C102" H 1850 2100 50  0000 C CNN
+F 1 "100nF" H 1850 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1788 1700 50  0001 C CNN
+F 3 "~" H 1750 1850 50  0001 C CNN
+	1    1750 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C101
+U 1 1 602880E6
+P 1350 1850
+F 0 "C101" H 1450 2100 50  0000 C CNN
+F 1 "10uF" H 1450 2000 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" H 1388 1700 50  0001 C CNN
+F 3 "~" H 1350 1850 50  0001 C CNN
+	1    1350 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 60288712
+P 4300 1350
+F 0 "#PWR0103" H 4300 1100 50  0001 C CNN
+F 1 "GND" H 4305 1177 50  0000 C CNN
+F 2 "" H 4300 1350 50  0001 C CNN
+F 3 "" H 4300 1350 50  0001 C CNN
+	1    4300 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1350 4300 1250
+Wire Wire Line
+	4300 1250 4800 1250
+Text Label 4800 1350 2    50   ~ 0
+VCC
+Text Label 4800 1450 2    50   ~ 0
+CANH
+Text Label 4800 1550 2    50   ~ 0
+CANL
+$Comp
+L power:GND #PWR0101
+U 1 1 6028A877
+P 1350 2000
+F 0 "#PWR0101" H 1350 1750 50  0001 C CNN
+F 1 "GND" H 1355 1827 50  0000 C CNN
+F 2 "" H 1350 2000 50  0001 C CNN
+F 3 "" H 1350 2000 50  0001 C CNN
+	1    1350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 6028AD4A
+P 1750 2000
+F 0 "#PWR0102" H 1750 1750 50  0001 C CNN
+F 1 "GND" H 1755 1827 50  0000 C CNN
+F 2 "" H 1750 2000 50  0001 C CNN
+F 3 "" H 1750 2000 50  0001 C CNN
+	1    1750 2000
+	1    0    0    -1  
+$EndComp
+Text Label 1350 1550 2    50   ~ 0
+VCC
+Text Label 1750 1550 2    50   ~ 0
+VCC
+Wire Wire Line
+	1350 1550 1350 1700
+Wire Wire Line
+	1750 1550 1750 1700
+Text Label 1450 3100 2    50   ~ 0
+CANH
+Text Label 1450 3400 2    50   ~ 0
+CANH
+Text Label 1750 3100 0    50   ~ 0
+CANL
+Text Label 1750 3400 0    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J109
+U 1 1 602921FA
+P 6650 1350
+F 0 "J109" H 6730 1342 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 1251 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 1350 50  0001 C CNN
+F 3 "~" H 6650 1350 50  0001 C CNN
+	1    6650 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 60292200
+P 5950 1350
+F 0 "#PWR0111" H 5950 1100 50  0001 C CNN
+F 1 "GND" H 5955 1177 50  0000 C CNN
+F 2 "" H 5950 1350 50  0001 C CNN
+F 3 "" H 5950 1350 50  0001 C CNN
+	1    5950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1350 5950 1250
+Wire Wire Line
+	5950 1250 6450 1250
+Text Label 6450 1350 2    50   ~ 0
+VCC
+Text Label 6450 1450 2    50   ~ 0
+CANH
+Text Label 6450 1550 2    50   ~ 0
+CANL
+Text Notes 4550 950  0    50   ~ 0
+Phoenix MC
+Text Notes 6250 950  0    50   ~ 0
+JST XH
+Text Notes 1350 1350 0    50   ~ 0
+Optional\nfiltering\ncapacitors
+Text Notes 1200 2700 0    50   ~ 0
+Termination resistors\n(1x60R is equivalent)
+$Comp
+L Connector_Generic:Conn_01x04 J102
+U 1 1 60295765
+P 5000 1900
+F 0 "J102" H 5080 1892 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 1801 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 1900 50  0001 C CNN
+F 3 "~" H 5000 1900 50  0001 C CNN
+	1    5000 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 6029576B
+P 4300 1900
+F 0 "#PWR0104" H 4300 1650 50  0001 C CNN
+F 1 "GND" H 4305 1727 50  0000 C CNN
+F 2 "" H 4300 1900 50  0001 C CNN
+F 3 "" H 4300 1900 50  0001 C CNN
+	1    4300 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 1900 4300 1800
+Wire Wire Line
+	4300 1800 4800 1800
+Text Label 4800 1900 2    50   ~ 0
+VCC
+Text Label 4800 2000 2    50   ~ 0
+CANH
+Text Label 4800 2100 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J110
+U 1 1 60295776
+P 6650 1900
+F 0 "J110" H 6730 1892 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 1801 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 1900 50  0001 C CNN
+F 3 "~" H 6650 1900 50  0001 C CNN
+	1    6650 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0112
+U 1 1 6029577C
+P 5950 1900
+F 0 "#PWR0112" H 5950 1650 50  0001 C CNN
+F 1 "GND" H 5955 1727 50  0000 C CNN
+F 2 "" H 5950 1900 50  0001 C CNN
+F 3 "" H 5950 1900 50  0001 C CNN
+	1    5950 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 1900 5950 1800
+Wire Wire Line
+	5950 1800 6450 1800
+Text Label 6450 1900 2    50   ~ 0
+VCC
+Text Label 6450 2000 2    50   ~ 0
+CANH
+Text Label 6450 2100 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J103
+U 1 1 60298B56
+P 5000 2450
+F 0 "J103" H 5080 2442 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 2351 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 2450 50  0001 C CNN
+F 3 "~" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 60298B5C
+P 4300 2450
+F 0 "#PWR0105" H 4300 2200 50  0001 C CNN
+F 1 "GND" H 4305 2277 50  0000 C CNN
+F 2 "" H 4300 2450 50  0001 C CNN
+F 3 "" H 4300 2450 50  0001 C CNN
+	1    4300 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 2450 4300 2350
+Wire Wire Line
+	4300 2350 4800 2350
+Text Label 4800 2450 2    50   ~ 0
+VCC
+Text Label 4800 2550 2    50   ~ 0
+CANH
+Text Label 4800 2650 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J111
+U 1 1 60298B67
+P 6650 2450
+F 0 "J111" H 6730 2442 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 2351 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 2450 50  0001 C CNN
+F 3 "~" H 6650 2450 50  0001 C CNN
+	1    6650 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 60298B6D
+P 5950 2450
+F 0 "#PWR0113" H 5950 2200 50  0001 C CNN
+F 1 "GND" H 5955 2277 50  0000 C CNN
+F 2 "" H 5950 2450 50  0001 C CNN
+F 3 "" H 5950 2450 50  0001 C CNN
+	1    5950 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 2450 5950 2350
+Wire Wire Line
+	5950 2350 6450 2350
+Text Label 6450 2450 2    50   ~ 0
+VCC
+Text Label 6450 2550 2    50   ~ 0
+CANH
+Text Label 6450 2650 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J104
+U 1 1 60298B78
+P 5000 3000
+F 0 "J104" H 5080 2992 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 2901 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 3000 50  0001 C CNN
+F 3 "~" H 5000 3000 50  0001 C CNN
+	1    5000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 60298B7E
+P 4300 3000
+F 0 "#PWR0106" H 4300 2750 50  0001 C CNN
+F 1 "GND" H 4305 2827 50  0000 C CNN
+F 2 "" H 4300 3000 50  0001 C CNN
+F 3 "" H 4300 3000 50  0001 C CNN
+	1    4300 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3000 4300 2900
+Wire Wire Line
+	4300 2900 4800 2900
+Text Label 4800 3000 2    50   ~ 0
+VCC
+Text Label 4800 3100 2    50   ~ 0
+CANH
+Text Label 4800 3200 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J112
+U 1 1 60298B89
+P 6650 3000
+F 0 "J112" H 6730 2992 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 2901 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 3000 50  0001 C CNN
+F 3 "~" H 6650 3000 50  0001 C CNN
+	1    6650 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0114
+U 1 1 60298B8F
+P 5950 3000
+F 0 "#PWR0114" H 5950 2750 50  0001 C CNN
+F 1 "GND" H 5955 2827 50  0000 C CNN
+F 2 "" H 5950 3000 50  0001 C CNN
+F 3 "" H 5950 3000 50  0001 C CNN
+	1    5950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3000 5950 2900
+Wire Wire Line
+	5950 2900 6450 2900
+Text Label 6450 3000 2    50   ~ 0
+VCC
+Text Label 6450 3100 2    50   ~ 0
+CANH
+Text Label 6450 3200 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J105
+U 1 1 602A3D9B
+P 5000 3500
+F 0 "J105" H 5080 3492 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 3401 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 3500 50  0001 C CNN
+F 3 "~" H 5000 3500 50  0001 C CNN
+	1    5000 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 602A3DA1
+P 4300 3500
+F 0 "#PWR0107" H 4300 3250 50  0001 C CNN
+F 1 "GND" H 4305 3327 50  0000 C CNN
+F 2 "" H 4300 3500 50  0001 C CNN
+F 3 "" H 4300 3500 50  0001 C CNN
+	1    4300 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 3500 4300 3400
+Wire Wire Line
+	4300 3400 4800 3400
+Text Label 4800 3500 2    50   ~ 0
+VCC
+Text Label 4800 3600 2    50   ~ 0
+CANH
+Text Label 4800 3700 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J113
+U 1 1 602A3DAC
+P 6650 3500
+F 0 "J113" H 6730 3492 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 3401 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 3500 50  0001 C CNN
+F 3 "~" H 6650 3500 50  0001 C CNN
+	1    6650 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0115
+U 1 1 602A3DB2
+P 5950 3500
+F 0 "#PWR0115" H 5950 3250 50  0001 C CNN
+F 1 "GND" H 5955 3327 50  0000 C CNN
+F 2 "" H 5950 3500 50  0001 C CNN
+F 3 "" H 5950 3500 50  0001 C CNN
+	1    5950 3500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 3500 5950 3400
+Wire Wire Line
+	5950 3400 6450 3400
+Text Label 6450 3500 2    50   ~ 0
+VCC
+Text Label 6450 3600 2    50   ~ 0
+CANH
+Text Label 6450 3700 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J106
+U 1 1 602A3DBD
+P 5000 4050
+F 0 "J106" H 5080 4042 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 3951 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 4050 50  0001 C CNN
+F 3 "~" H 5000 4050 50  0001 C CNN
+	1    5000 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 602A3DC3
+P 4300 4050
+F 0 "#PWR0108" H 4300 3800 50  0001 C CNN
+F 1 "GND" H 4305 3877 50  0000 C CNN
+F 2 "" H 4300 4050 50  0001 C CNN
+F 3 "" H 4300 4050 50  0001 C CNN
+	1    4300 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4050 4300 3950
+Wire Wire Line
+	4300 3950 4800 3950
+Text Label 4800 4050 2    50   ~ 0
+VCC
+Text Label 4800 4150 2    50   ~ 0
+CANH
+Text Label 4800 4250 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J114
+U 1 1 602A3DCE
+P 6650 4050
+F 0 "J114" H 6730 4042 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 3951 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 4050 50  0001 C CNN
+F 3 "~" H 6650 4050 50  0001 C CNN
+	1    6650 4050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0116
+U 1 1 602A3DD4
+P 5950 4050
+F 0 "#PWR0116" H 5950 3800 50  0001 C CNN
+F 1 "GND" H 5955 3877 50  0000 C CNN
+F 2 "" H 5950 4050 50  0001 C CNN
+F 3 "" H 5950 4050 50  0001 C CNN
+	1    5950 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4050 5950 3950
+Wire Wire Line
+	5950 3950 6450 3950
+Text Label 6450 4050 2    50   ~ 0
+VCC
+Text Label 6450 4150 2    50   ~ 0
+CANH
+Text Label 6450 4250 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J107
+U 1 1 602A3DDF
+P 5000 4600
+F 0 "J107" H 5080 4592 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 4501 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 4600 50  0001 C CNN
+F 3 "~" H 5000 4600 50  0001 C CNN
+	1    5000 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 602A3DE5
+P 4300 4600
+F 0 "#PWR0109" H 4300 4350 50  0001 C CNN
+F 1 "GND" H 4305 4427 50  0000 C CNN
+F 2 "" H 4300 4600 50  0001 C CNN
+F 3 "" H 4300 4600 50  0001 C CNN
+	1    4300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4600 4300 4500
+Wire Wire Line
+	4300 4500 4800 4500
+Text Label 4800 4600 2    50   ~ 0
+VCC
+Text Label 4800 4700 2    50   ~ 0
+CANH
+Text Label 4800 4800 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J115
+U 1 1 602A3DF0
+P 6650 4600
+F 0 "J115" H 6730 4592 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 4501 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 4600 50  0001 C CNN
+F 3 "~" H 6650 4600 50  0001 C CNN
+	1    6650 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 602A3DF6
+P 5950 4600
+F 0 "#PWR0117" H 5950 4350 50  0001 C CNN
+F 1 "GND" H 5955 4427 50  0000 C CNN
+F 2 "" H 5950 4600 50  0001 C CNN
+F 3 "" H 5950 4600 50  0001 C CNN
+	1    5950 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 4600 5950 4500
+Wire Wire Line
+	5950 4500 6450 4500
+Text Label 6450 4600 2    50   ~ 0
+VCC
+Text Label 6450 4700 2    50   ~ 0
+CANH
+Text Label 6450 4800 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J108
+U 1 1 602A3E01
+P 5000 5150
+F 0 "J108" H 5080 5142 50  0000 L CNN
+F 1 "Conn_01x04" H 5080 5051 50  0000 L CNN
+F 2 "Connector_Phoenix_MC:PhoenixContact_MC_1,5_4-G-3.81_1x04_P3.81mm_Horizontal" H 5000 5150 50  0001 C CNN
+F 3 "~" H 5000 5150 50  0001 C CNN
+	1    5000 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0110
+U 1 1 602A3E07
+P 4300 5150
+F 0 "#PWR0110" H 4300 4900 50  0001 C CNN
+F 1 "GND" H 4305 4977 50  0000 C CNN
+F 2 "" H 4300 5150 50  0001 C CNN
+F 3 "" H 4300 5150 50  0001 C CNN
+	1    4300 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 5150 4300 5050
+Wire Wire Line
+	4300 5050 4800 5050
+Text Label 4800 5150 2    50   ~ 0
+VCC
+Text Label 4800 5250 2    50   ~ 0
+CANH
+Text Label 4800 5350 2    50   ~ 0
+CANL
+$Comp
+L Connector_Generic:Conn_01x04 J116
+U 1 1 602A3E12
+P 6650 5150
+F 0 "J116" H 6730 5142 50  0000 L CNN
+F 1 "Conn_01x04" H 6730 5051 50  0000 L CNN
+F 2 "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical" H 6650 5150 50  0001 C CNN
+F 3 "~" H 6650 5150 50  0001 C CNN
+	1    6650 5150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0118
+U 1 1 602A3E18
+P 5950 5150
+F 0 "#PWR0118" H 5950 4900 50  0001 C CNN
+F 1 "GND" H 5955 4977 50  0000 C CNN
+F 2 "" H 5950 5150 50  0001 C CNN
+F 3 "" H 5950 5150 50  0001 C CNN
+	1    5950 5150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5950 5150 5950 5050
+Wire Wire Line
+	5950 5050 6450 5050
+Text Label 6450 5150 2    50   ~ 0
+VCC
+Text Label 6450 5250 2    50   ~ 0
+CANH
+Text Label 6450 5350 2    50   ~ 0
+CANL
+$Comp
+L Mechanical:MountingHole H101
+U 1 1 602BF9D0
+P 1600 4300
+F 0 "H101" H 1700 4346 50  0000 L CNN
+F 1 "MountingHole" H 1700 4255 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm" H 1600 4300 50  0001 C CNN
+F 3 "~" H 1600 4300 50  0001 C CNN
+	1    1600 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H102
+U 1 1 602BFD8B
+P 1600 4600
+F 0 "H102" H 1700 4646 50  0000 L CNN
+F 1 "MountingHole" H 1700 4555 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm" H 1600 4600 50  0001 C CNN
+F 3 "~" H 1600 4600 50  0001 C CNN
+	1    1600 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H103
+U 1 1 602BFF04
+P 1600 4900
+F 0 "H103" H 1700 4946 50  0000 L CNN
+F 1 "MountingHole" H 1700 4855 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm" H 1600 4900 50  0001 C CNN
+F 3 "~" H 1600 4900 50  0001 C CNN
+	1    1600 4900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H104
+U 1 1 602C00C6
+P 1600 5200
+F 0 "H104" H 1700 5246 50  0000 L CNN
+F 1 "MountingHole" H 1700 5155 50  0000 L CNN
+F 2 "MountingHole:MountingHole_4.5mm" H 1600 5200 50  0001 C CNN
+F 3 "~" H 1600 5200 50  0001 C CNN
+	1    1600 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C103
+U 1 1 602D1F64
+P 8900 2100
+F 0 "C103" V 8648 2100 50  0000 C CNN
+F 1 "100n" V 8739 2100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 1950 50  0001 C CNN
+F 3 "~" H 8900 2100 50  0001 C CNN
+	1    8900 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0119
+U 1 1 602D36E1
+P 8250 2200
+F 0 "#PWR0119" H 8250 1950 50  0001 C CNN
+F 1 "GND" H 8255 2027 50  0000 C CNN
+F 2 "" H 8250 2200 50  0001 C CNN
+F 3 "" H 8250 2200 50  0001 C CNN
+	1    8250 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2200 8250 2100
+Wire Wire Line
+	8250 2100 8750 2100
+Text Label 9350 2100 0    50   ~ 0
+VCC
+Wire Wire Line
+	9350 2100 9050 2100
+$Comp
+L Device:C C104
+U 1 1 602D5655
+P 8900 2500
+F 0 "C104" V 8648 2500 50  0000 C CNN
+F 1 "100n" V 8739 2500 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 2350 50  0001 C CNN
+F 3 "~" H 8900 2500 50  0001 C CNN
+	1    8900 2500
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0120
+U 1 1 602D565B
+P 8250 2600
+F 0 "#PWR0120" H 8250 2350 50  0001 C CNN
+F 1 "GND" H 8255 2427 50  0000 C CNN
+F 2 "" H 8250 2600 50  0001 C CNN
+F 3 "" H 8250 2600 50  0001 C CNN
+	1    8250 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 2600 8250 2500
+Wire Wire Line
+	8250 2500 8750 2500
+Text Label 9350 2500 0    50   ~ 0
+VCC
+Wire Wire Line
+	9350 2500 9050 2500
+$Comp
+L Device:C C105
+U 1 1 602D6408
+P 8900 2900
+F 0 "C105" V 8648 2900 50  0000 C CNN
+F 1 "100n" V 8739 2900 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 2750 50  0001 C CNN
+F 3 "~" H 8900 2900 50  0001 C CNN
+	1    8900 2900
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 602D640E
+P 8250 3000
+F 0 "#PWR0121" H 8250 2750 50  0001 C CNN
+F 1 "GND" H 8255 2827 50  0000 C CNN
+F 2 "" H 8250 3000 50  0001 C CNN
+F 3 "" H 8250 3000 50  0001 C CNN
+	1    8250 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3000 8250 2900
+Wire Wire Line
+	8250 2900 8750 2900
+Text Label 9350 2900 0    50   ~ 0
+VCC
+Wire Wire Line
+	9350 2900 9050 2900
+$Comp
+L Device:C C106
+U 1 1 602D7294
+P 8900 3300
+F 0 "C106" V 8648 3300 50  0000 C CNN
+F 1 "100n" V 8739 3300 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 3150 50  0001 C CNN
+F 3 "~" H 8900 3300 50  0001 C CNN
+	1    8900 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 602D729A
+P 8250 3400
+F 0 "#PWR0122" H 8250 3150 50  0001 C CNN
+F 1 "GND" H 8255 3227 50  0000 C CNN
+F 2 "" H 8250 3400 50  0001 C CNN
+F 3 "" H 8250 3400 50  0001 C CNN
+	1    8250 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3400 8250 3300
+Wire Wire Line
+	8250 3300 8750 3300
+Text Label 9350 3300 0    50   ~ 0
+VCC
+Wire Wire Line
+	9350 3300 9050 3300
+$Comp
+L Device:C C107
+U 1 1 602D826D
+P 8900 3700
+F 0 "C107" V 8648 3700 50  0000 C CNN
+F 1 "100n" V 8739 3700 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 3550 50  0001 C CNN
+F 3 "~" H 8900 3700 50  0001 C CNN
+	1    8900 3700
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 602D8273
+P 8250 3800
+F 0 "#PWR0123" H 8250 3550 50  0001 C CNN
+F 1 "GND" H 8255 3627 50  0000 C CNN
+F 2 "" H 8250 3800 50  0001 C CNN
+F 3 "" H 8250 3800 50  0001 C CNN
+	1    8250 3800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 3800 8250 3700
+Wire Wire Line
+	8250 3700 8750 3700
+Text Label 9350 3700 0    50   ~ 0
+VCC
+Wire Wire Line
+	9350 3700 9050 3700
+$Comp
+L Device:C C108
+U 1 1 602D9087
+P 8900 4100
+F 0 "C108" V 8648 4100 50  0000 C CNN
+F 1 "100n" V 8739 4100 50  0000 C CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8938 3950 50  0001 C CNN
+F 3 "~" H 8900 4100 50  0001 C CNN
+	1    8900 4100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 602D908D
+P 8250 4200
+F 0 "#PWR0124" H 8250 3950 50  0001 C CNN
+F 1 "GND" H 8255 4027 50  0000 C CNN
+F 2 "" H 8250 4200 50  0001 C CNN
+F 3 "" H 8250 4200 50  0001 C CNN
+	1    8250 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 4200 8250 4100
+Wire Wire Line
+	8250 4100 8750 4100
+Text Label 9350 4100 0    50   ~ 0
+VCC
+Wire Wire Line
+	9350 4100 9050 4100
+$EndSCHEMATC
